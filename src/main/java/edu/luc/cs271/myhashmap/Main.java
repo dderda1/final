@@ -11,7 +11,7 @@ public class Main {
       map.put("Bonjour", "Hello");
       hmap.put("Comment Ca Va?", "How Are you?"); //if we wanted to do a french langauge flash card, doesn't really matter about content
   
-
+//OR WE COULD USE QUEUES, THE ONLY ISSUE IS IF WE WANT TO SHUFFLE WE WOULD NEED TO REBUILD THE QUEUES
       /* Display content using Iterator*/
       Set flashTitle = map.entrySet();
       Iterator itr = flashTitle.iterator();
