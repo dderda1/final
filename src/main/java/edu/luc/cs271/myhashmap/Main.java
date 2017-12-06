@@ -5,7 +5,26 @@ import java.util.*;
 public class Main {
 
   public static void main(final String[] args) throws InterruptedException {
-    // set up the scanner so that it separates words based on space and punctuation
+      HashMap<Integer, String> map = new HashMap<String, String>(); // i think we will want to try using a string string map
+
+      //example of adding this
+      map.put("Bonjour", "Hello");
+      hmap.put("Comment Ca Va?", "How Are you?"); //if we wanted to do a french langauge flash card, doesn't really matter about content
+  
+
+      /* Display content using Iterator*/
+      Set flashTitle = map.entrySet();
+      Iterator itr = flashTitle.iterator();
+      while(itr.hasNext()) {
+         Map.Entry entry = (Map.Entry)itr.next();
+         System.out.print("Test yourself: "+ eentry.getKey() + " );
+         //here would we want to do an if else to see if the answer is correct
+         //display the value if correct, don't dispay it not correct prompt for another input?
+         System.out.println("The answer is: " +entry.getValue());
+      }
+
+
+   /* // set up the scanner so that it separates words based on space and punctuation
     final Scanner input = new Scanner(System.in).useDelimiter("[^\\p{Alnum}]+");
     // TRIALED measure the performance for MyHashMap, HashMap, and TreeMap several times each!
     final Map<String, Integer> counts = new MyHashMap<>(); // a prime number!
@@ -24,4 +43,4 @@ public class Main {
       System.out.println(arr.get(i));
     }
   }
-}
+} */
