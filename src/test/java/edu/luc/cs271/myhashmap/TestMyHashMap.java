@@ -9,7 +9,10 @@ import org.junit.Test;
 
 public class TestMyHashMap {
 
-  // DONE complete this test class
+  // We should be able to modify these as tests, I assume we will just need to assert if empty not for sure using all test cases
+  //most of our tests will be derived from user input
+  //should we also just make a strict flash card topic or allow the user to input their own flashcards
+  // also how many subjects do we want, will use be able to decide what subject they wish to go over?
 
   // DONE declare a reference to the SUT (system under test), i.e., MyHashMap
   MyHashMap<String, Integer> fixture;

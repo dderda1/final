@@ -9,6 +9,19 @@ import java.util.*;
  * @param <K> the key type
  * @param <V> the value type
  */
+ // this page may be valuable when it comes to creating a map that holds all of the flash cards
+ //we will need to come up with a shuffling method i have an example one below here
+  private static final int SIZE = 20;
+
+    public static void main(String args[]) {
+        ArrayList<Integer> flashcards = new ArrayList<Integer>();
+
+        for (int i = 0; i < SIZE; ++i) {
+            flashcards.add(i);
+        }
+
+        Collections.shuffle(flashcards);
+
 public class  MyHashMap<K, V> implements Map<K, V> {
 
   private static final int DEFAULT_TABLE_SIZE = 11; // a prime
